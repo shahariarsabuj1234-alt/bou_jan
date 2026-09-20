@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-handwriting {
+    font-family: 'Caveat', cursive;
+  }
+  .font-romantic {
+    font-family: 'Dancing Script', cursive;
+  }
+  .font-serif-title {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .font-sans-outfit {
+    font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+@keyframes heart-beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.15);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.12);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 4s ease-in-out infinite;
+}
+
+.animate-heart-beat {
+  animation: heart-beat 1.8s ease-in-out infinite;
+}
